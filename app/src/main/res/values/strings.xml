@@ -11,25 +11,20 @@
     <string name="days"> днів</string>
     <string name="key_for_entity">AppealEntity</string>
 
-    <string name="str_in_work">In work</string>
-    <string name="str_done">Done</string>
-    <string name="str_wait">Wait</string>
+    <string name="str_in_work">В роботі</string>
+    <string name="str_done">Виконано</string>
+    <string name="str_wait">Очікує</string>
 
 
     <string name="category1" >Комунальне господарство</string>
     <string name="category2" >Благоустрій та будівництво</string>
     <string name="respon_1" >Днiпропетровський МВК</string>
     <string name="respon_2" >Харьковський МВК</string>
-    <string name="full_text1">вул. Б.Кротова, 22, Дніпропетровськ</string>
-    <string name="full_text2">Дніпропетровськ, вулиця Олеся Гончара</string>
-
-
+    <string name="full_text1">вул. Б.Кротова, 22, Дніпропетровськ, Відкритий люк (біля рекламного щита)</string>
+    <string name="full_text2">Дніпропетровськ, вулиця Олеся Гончара, тріснув фундамент будинку </string>
 
     <string name="deadlineTag">Label for deadline</string>
-
     <string name="drawer_header_text">e-contact</string>
-
-
 
     <string name="bottom_drawer_text1">Зроблено з любов\'ю</string>
     <string name="bottom_drawer_text2"><a href="#">IT Ruh Dnipro</a> та <a href="#">Yalantis</a></string>

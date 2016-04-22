@@ -67,7 +67,7 @@ public class DetailActivity extends AppCompatActivity {
 
     private void setEntityData(AppealEntity entity, Toolbar actionBar) {
         if (actionBar != null) {
-            actionBar.setTitle(entity.getNumber());
+            setTitle(entity.getNumber());
         }
 
         setRecyclerView(entity);
