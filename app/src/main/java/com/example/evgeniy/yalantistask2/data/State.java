@@ -1,6 +1,9 @@
 package com.example.evgeniy.yalantistask2.data;
 
 
+/**
+ * Created by Evgeniy
+ */
 public enum State {
 
     WAIT(0),

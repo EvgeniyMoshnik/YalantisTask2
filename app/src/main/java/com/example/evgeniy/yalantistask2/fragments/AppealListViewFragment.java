@@ -22,7 +22,7 @@ import java.util.List;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by Evgeniy
  */
 public class AppealListViewFragment extends Fragment {
 

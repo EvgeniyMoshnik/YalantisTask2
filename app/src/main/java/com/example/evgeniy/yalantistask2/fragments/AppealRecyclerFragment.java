@@ -21,6 +21,9 @@ import com.melnykov.fab.FloatingActionButton;
 import java.util.List;
 
 
+/**
+ * Created by Evgeniy
+ */
 public class AppealRecyclerFragment extends Fragment {
 
     public static final String STATE_KEY = "state";

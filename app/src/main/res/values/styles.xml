@@ -57,7 +57,7 @@
     </style>
 
     <style name="DrawerMenuItemAppearance" parent="TextAppearance.AppCompat.Menu">
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">15sp</item>
     </style>
 
     <style name="DrawerHeaderTitle">

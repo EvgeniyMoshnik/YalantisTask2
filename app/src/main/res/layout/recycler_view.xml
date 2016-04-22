@@ -5,7 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipToPadding="false"
-    android:paddingBottom="@dimen/card_item_parent_right_margin"
-    android:paddingTop="@dimen/card_item_parent_right_margin"
     android:scrollbars="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior" />

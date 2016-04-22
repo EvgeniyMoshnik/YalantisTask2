@@ -54,7 +54,6 @@ public class DetailActivity extends AppCompatActivity {
         mTextViewValueResponsible = (TextView) findViewById(R.id.dnipropetrovsk);
         mTextViewDescription = (TextView) findViewById(R.id.problem_description);
 
-
         Intent intent = getIntent();
         AppealEntity entity = (AppealEntity) intent.getSerializableExtra(getString(R.string.key_for_entity));
 
