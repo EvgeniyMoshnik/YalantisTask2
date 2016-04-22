@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/menu_actions"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/all_appeals"
+            android:icon="@drawable/ic_issues"
+            android:title="@string/all_appeals" />
+        <item
+            android:id="@+id/appeals_on_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/appeals_on_map" />
+
+    </group>
+    <group
+        android:id="@+id/menu_login"
+        android:checkableBehavior="none">
+        <item android:title="@string/menu_login" />
+
+    </group>
+</menu>

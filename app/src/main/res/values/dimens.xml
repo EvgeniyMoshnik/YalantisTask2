@@ -1,0 +1,97 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- item_list_card -->
+    <dimen name="card_height">126dp</dimen>
+    <dimen name="card_item_margin">8dp</dimen>
+    <dimen name="card_item_corner_radius">8dp</dimen>
+    <dimen name="card_item_top_text_width">231dp</dimen>
+    <dimen name="card_item_top_text_height">40dp</dimen>
+    <dimen name="card_item_parent_top_margin">16dp</dimen>
+    <dimen name="card_item_text_left_margin">97dp</dimen>
+    <dimen name="card_item_parent_right_margin">16dp</dimen>
+    <dimen name="card_item_top_text_size">16sp</dimen>
+    <dimen name="card_item_bottom_text_size">14sp</dimen>
+    <dimen name="card_item_middle_text_size">14sp</dimen>
+    <dimen name="card_item_middle_text_height">16dp</dimen>
+    <dimen name="card_item_middle_text_width">169dp</dimen>
+    <dimen name="card_item_parent_middle_margin">62dp</dimen>
+    <dimen name="card_item_text_right_margin">78dp</dimen>
+    <dimen name="card_item_bottom_text_height">16sp</dimen>
+    <dimen name="card_item_days_text_right_margin">24dp</dimen>
+    <dimen name="card_item_bottom_text_margin">12dp</dimen>
+
+    <dimen name="thumb_up_size">20dp</dimen>
+    <dimen name="card_item_thumb_up_left_margin">18dp</dimen>
+    <dimen name="card_item_likes_left_margin">46dp</dimen>
+
+    <dimen name="category_icon_size">31dp</dimen>
+    <dimen name="card_item_category_icon_left_margin">20dp</dimen>
+    <dimen name="card_item_category_icon_top_margin">20dp</dimen>
+
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="card_item_left_divider_margin">80dp</dimen>
+
+    <dimen name="list_item_margin">8dp</dimen>
+    <dimen name="list_item_margin_2">16dp</dimen>
+
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="drawer_bottom_text_padding">12dp</dimen>
+    <dimen name="drawer_bottom_text_size">12sp</dimen>
+
+    <dimen name="nav_header_height">100dp</dimen>
+    <dimen name="nav_header_vertical_margin">48dp</dimen>
+    <dimen name="nav_header_title_height">40dp</dimen>
+    <dimen name="nav_header_title_text_size">24sp</dimen>
+    <dimen name="navigation_view_width">304dp</dimen>
+
+    <!-- activity_detail -->
+    <dimen name="padding_top_bottom">14dp</dimen>
+
+    <dimen name="height_dividerView">1dp</dimen>
+    <dimen name="height_recycler">160dp</dimen>
+    <dimen name="width_recycler">140dp</dimen>
+    <dimen name="margin_recycler">10dp</dimen>
+
+    <dimen name="text_size_title">18dp</dimen>
+    <dimen name="text_size">15dp</dimen>
+
+    <dimen name="shape_padding_top_bottom">5dp</dimen>
+    <dimen name="shape_padding_left_right">15dp</dimen>
+    <dimen name="corner_radius">20dp</dimen>
+
+
+    <dimen name="progress_switch_height">30dp</dimen>
+    <dimen name="progress_switch_width">100dp</dimen>
+
+
+    <dimen name="text_big_font_size">16sp</dimen>
+
+    <dimen name="detail_margin_20">20dp</dimen>
+    <dimen name="detail_margin_10">10dp</dimen>
+
+    <dimen name="round_textview_padding_4">4dp</dimen>
+    <dimen name="round_textview_padding_15">15dp</dimen>
+
+    <dimen name="appeal_corner_radius">10dp</dimen>
+    <dimen name="appeal_icon_size">30dp</dimen>
+    <dimen name="appeal_margin_10dp">10dp</dimen>
+    <dimen name="appeal_margin_20dp">20dp</dimen>
+    <dimen name="appeal_divider_offset">80dp</dimen>
+    <dimen name="appeal_elevation">4dp</dimen>
+    <dimen name="appeal_padding_card_view">10dp</dimen>
+    <dimen name="appeal_like_size">25dp</dimen>
+    <dimen name="appeal_margin_5dp">5dp</dimen>
+    <dimen name="appeal_like_margin">15dp</dimen>
+    <dimen name="appeal_like_counter_margin">5dp</dimen>
+    <dimen name="appeal_item_height">126dp</dimen>
+    <dimen name="appeal_list_padding_size">8dp</dimen>
+    <dimen name="drawer_view_width">304dp</dimen>
+    <dimen name="drawer_header_bottom">30dp</dimen>
+    <dimen name="drawer_header_side">20dp</dimen>
+    <dimen name="drawer_links_padding">20dp</dimen>
+</resources>

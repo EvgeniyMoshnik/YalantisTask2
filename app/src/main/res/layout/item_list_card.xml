@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/card_height"
+    android:layout_margin="@dimen/card_item_margin"
+    app:cardCornerRadius="@dimen/card_item_corner_radius">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/category_icon"
+            style="@style/Card.ImageView.Category"
+            android:layout_width="@dimen/category_icon_size"
+            android:layout_height="@dimen/category_icon_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/card_item_category_icon_left_margin"
+            android:layout_marginStart="@dimen/card_item_category_icon_left_margin"
+            android:layout_marginTop="@dimen/card_item_category_icon_top_margin"
+
+            android:contentDescription="@string/emptyString"
+            tools:src="@drawable/ic_issues" />
+
+        <View
+            android:layout_width="@dimen/divider_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/card_item_left_divider_margin"
+            android:alpha="0.19"
+            android:background="@android:color/black" />
+
+        <ImageView
+            style="@style/Card.ImageView.Likes"
+            android:layout_width="@dimen/thumb_up_size"
+            android:layout_height="@dimen/thumb_up_size"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/card_item_bottom_text_margin"
+            android:layout_marginLeft="@dimen/card_item_thumb_up_left_margin"
+            android:layout_marginStart="@dimen/card_item_thumb_up_left_margin"
+            android:contentDescription="@string/emptyString"
+
+            android:src="@drawable/ic_thumb_up_black_18dp" />
+
+        <TextView
+            android:id="@+id/likes_amount"
+            style="@style/Card.Text.Likes"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/card_item_bottom_text_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/card_item_bottom_text_margin"
+            android:layout_marginLeft="@dimen/card_item_likes_left_margin"
+
+            android:layout_marginStart="@dimen/card_item_likes_left_margin"
+            tools:text="843" />
+
+        <TextView
+            android:id="@+id/category_title"
+            style="@style/Card.Text.Top"
+            android:layout_width="@dimen/card_item_top_text_width"
+            android:layout_height="@dimen/card_item_top_text_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/card_item_parent_right_margin"
+            android:layout_marginLeft="@dimen/card_item_text_left_margin"
+            android:layout_marginRight="@dimen/card_item_parent_right_margin"
+            android:layout_marginStart="@dimen/card_item_text_left_margin"
+
+            android:layout_marginTop="@dimen/card_item_parent_top_margin"
+            tools:text="DASDGADFAS ASDASDASDQ sdfafaasq asdasdasdasd ADQQ" />
+
+
+        <TextView
+            android:id="@+id/task_desc"
+            style="@style/Card.Text.Middle"
+            android:layout_width="@dimen/card_item_middle_text_width"
+
+            android:layout_height="@dimen/card_item_middle_text_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/card_item_text_right_margin"
+            android:layout_marginLeft="@dimen/card_item_text_left_margin"
+            android:layout_marginRight="@dimen/card_item_text_right_margin"
+            android:layout_marginStart="@dimen/card_item_text_left_margin"
+
+            android:layout_marginTop="@dimen/card_item_parent_middle_margin"
+            tools:text="dfggd dgfdgfgdh hjkhjkjh zcvxdfgd" />
+
+        <TextView
+            android:id="@+id/amount_days"
+            style="@style/Card.Text.Bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/card_item_bottom_text_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/card_item_bottom_text_margin"
+            android:layout_marginEnd="@dimen/card_item_days_text_right_margin"
+
+            android:layout_marginRight="@dimen/card_item_days_text_right_margin"
+            tools:text="23 днів" />
+
+        <TextView
+            android:id="@+id/date_created"
+            style="@style/Card.Text.Bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/card_item_bottom_text_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/card_item_bottom_text_margin"
+            android:layout_marginLeft="@dimen/card_item_text_left_margin"
+            android:layout_marginStart="@dimen/card_item_text_left_margin"
+            android:layout_toLeftOf="@id/amount_days"
+
+            android:layout_toStartOf="@id/amount_days"
+            tools:text="March 16, 2016" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.example.evgeniy.yalantistask2.activities.DetailActivity">
+
+    <include layout="@layout/toolbar_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/communal_services"
+                style="@style/TextViewTitle"
+                android:layout_marginBottom="@dimen/padding_top_bottom"
+                android:layout_marginTop="@dimen/padding_top_bottom"
+                android:onClick="toastShow"
+                android:text="@string/Municipal"
+                android:textColor="@color/textBlack" />
+
+            <TextView
+                android:id="@+id/textInWorking"
+                style="@style/TextView"
+                android:layout_marginBottom="@dimen/padding_top_bottom"
+                android:background="@drawable/process_shape"
+                android:onClick="toastShow"
+                android:text="@string/Status"
+                android:textColor="@color/textWhite" />
+
+            <View style="@style/DividerView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView
+                    android:id="@+id/created"
+                    style="@style/TextView"
+                    android:onClick="toastShow"
+                    android:text="@string/Created" />
+
+                <TextView
+                    android:id="@+id/creation_date"
+                    style="@style/TextViewRight"
+                    android:onClick="toastShow"
+                    android:text="@string/Date_Created" />
+            </FrameLayout>
+
+
+            <View style="@style/DividerView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView
+                    android:id="@+id/registered"
+                    style="@style/TextView"
+                    android:onClick="toastShow"
+                    android:text="@string/Registered" />
+
+                <TextView
+                    android:id="@+id/registration_date"
+                    style="@style/TextViewRight"
+                    android:onClick="toastShow"
+                    android:text="@string/Date_Registered" />
+            </FrameLayout>
+
+
+            <View style="@style/DividerView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView
+                    android:id="@+id/solve_till"
+                    style="@style/TextView"
+                    android:onClick="toastShow"
+                    android:text="@string/MakeUp" />
+
+                <TextView
+                    android:id="@+id/deadline"
+                    style="@style/TextViewRight"
+                    android:onClick="toastShow"
+                    android:tag="@string/deadlineTag"
+                    android:text="@string/Date_MakeUp" />
+            </FrameLayout>
+
+
+            <View style="@style/DividerView" />
+
+
+            <FrameLayout style="@style/FrameLayout">
+
+                <TextView
+                    android:id="@+id/responsible"
+                    style="@style/TextView"
+                    android:onClick="toastShow"
+                    android:text="@string/Responsible" />
+
+                <TextView
+                    android:id="@+id/dnipropetrovsk"
+                    style="@style/TextViewRight"
+                    android:onClick="toastShow"
+                    android:text="@string/Responsible_Name" />
+            </FrameLayout>
+
+
+            <View style="@style/DividerView" />
+
+            <TextView
+                android:id="@+id/problem_description"
+                style="@style/TextView"
+                android:layout_marginBottom="@dimen/padding_top_bottom"
+                android:layout_marginTop="@dimen/padding_top_bottom"
+                android:onClick="toastShow"
+                android:text="@string/Description"
+                android:textColor="@color/textBlack" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_top_bottom"
+                android:scrollbars="horizontal" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

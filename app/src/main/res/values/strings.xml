@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Yalantis Task 2</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">Всі звернення</string>
+
+    <string name="tab_1">В РОБОТІ</string>
+    <string name="tab_2">ВИКОНАНО</string>
+    <string name="tab_3">ОЧІКУЄ</string>
+    <string name="emptyString"/>
+
+    <string name="days"> днів</string>
+    <string name="key_for_entity">AppealEntity</string>
+
+    <string name="str_in_work">In work</string>
+    <string name="str_done">Done</string>
+    <string name="str_wait">Wait</string>
+
+
+    <string name="category1" >Комунальне господарство</string>
+    <string name="category2" >Благоустрій та будівництво</string>
+    <string name="respon_1" >Днiпропетровський МВК</string>
+    <string name="respon_2" >Харьковський МВК</string>
+    <string name="full_text1">вул. Б.Кротова, 22, Дніпропетровськ</string>
+    <string name="full_text2">Дніпропетровськ, вулиця Олеся Гончара</string>
+
+
+
+    <string name="deadlineTag">Label for deadline</string>
+
+    <string name="drawer_header_text">e-contact</string>
+
+
+
+    <string name="bottom_drawer_text1">Зроблено з любов\'ю</string>
+    <string name="bottom_drawer_text2"><a href="#">IT Ruh Dnipro</a> та <a href="#">Yalantis</a></string>
+
+
+    <string name="status_in_progress">В роботi</string>
+    <string name="status_wait">Очікує</string>
+    <string name="status_completed">Виконано</string>
+    <string name="e_contact">e-contact</string>
+
+    <!-- activity_detail -->
+    <string name="Municipal">Комунальне господарство</string>
+    <string name="Status">В роботі</string>
+    <string name="Created">Створено</string>
+    <string name="Date_Created">25 лютого 2016</string>
+    <string name="Registered">Зареєстровано</string>
+    <string name="Date_Registered">26 лютого 2016</string>
+    <string name="MakeUp">Вирішити до</string>
+    <string name="Date_MakeUp">26 лютого 2016</string>
+    <string name="Responsible">Відповідальний</string>
+    <string name="Responsible_Name">Дніпропетровський МВК( )</string>
+    <string name="Description">Відкритий люк (біля рекламного щита), район повороту 18-го і 19-го трамваїв на проспекті Миру з Донецького шосе.</string>
+    <string name="all_appeals">Всі звернення</string>
+    <string name="appeals_on_map">Звернення на мапі</string>
+    <string name="menu_login">Увійти в акаунт</string>
+    <string-array name="urlArray">
+        <item>http://gorod.dp.ua/photo/usergorod/2016/03/24/100409.jpg</item>
+        <item>http://gorod.dp.ua/photo/usergorod/2016/03/20/100339.jpg</item>
+        <item>http://gorod.dp.ua/photo/usergorod/2016/03/16/100300.jpg</item>
+    </string-array>
+
+</resources>
