@@ -51,7 +51,7 @@ public class AppealListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View v = convertView;
+        View v = convertView; //[Comment] You don't need view object. Use converview
         AppealViewHolder holder;
 
         if (v == null) {
@@ -71,7 +71,7 @@ public class AppealListAdapter extends BaseAdapter {
         String days = mContext.getResources().getString(R.string.days);
         holder.daysAmount.setText(String.valueOf(appealEntity.getDaysAmount()).concat(" ").concat(days));
 
-        v.setTag(holder);
+        v.setTag(holder); //[Comment] It should be in if {}
 
         return v;
     }
@@ -83,7 +83,7 @@ public class AppealListAdapter extends BaseAdapter {
         TextView daysAmount;
         TextView dateCreated;
         TextView likesAmount;
-        ImageView categoryIcon;
+        ImageView categoryIcon; //[Comment] can be private
 
         public AppealViewHolder(View itemView) {
 

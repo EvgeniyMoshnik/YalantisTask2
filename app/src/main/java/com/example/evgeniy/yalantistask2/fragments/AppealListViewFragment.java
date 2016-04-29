@@ -65,7 +65,7 @@ public class AppealListViewFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_list, container, false);
 
-        ListViewCompat mListView = (ListViewCompat) v.findViewById(R.id.list_view);
+        ListViewCompat mListView = (ListViewCompat) v.findViewById(R.id.list_view); //[Comment] Without m
         mListView.setAdapter(mAdapter);
 
         mListView.setOnItemClickListener(mInvoker);
