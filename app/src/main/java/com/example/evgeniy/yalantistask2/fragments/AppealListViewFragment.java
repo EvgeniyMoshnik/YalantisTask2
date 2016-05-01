@@ -65,13 +65,13 @@ public class AppealListViewFragment extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_list, container, false);
 
-        ListViewCompat mListView = (ListViewCompat) v.findViewById(R.id.list_view);
-        mListView.setAdapter(mAdapter);
+        ListViewCompat listView = (ListViewCompat) v.findViewById(R.id.list_view);
+        listView.setAdapter(mAdapter);
 
-        mListView.setOnItemClickListener(mInvoker);
+        listView.setOnItemClickListener(mInvoker);
 
         FloatingActionButton fab = (FloatingActionButton) getActivity().findViewById(R.id.fab);
-        fab.attachToListView(mListView);
+        fab.attachToListView(listView);
 
         return v;
     }

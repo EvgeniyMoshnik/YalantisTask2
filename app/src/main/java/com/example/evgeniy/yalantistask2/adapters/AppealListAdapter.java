@@ -1,6 +1,7 @@
 package com.example.evgeniy.yalantistask2.adapters;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,48 +52,46 @@ public class AppealListAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        View v = convertView;
         AppealViewHolder holder;
 
-        if (v == null) {
-            v = LayoutInflater.from(mContext).inflate(R.layout.item_list_card, parent, false);
-            holder = new AppealViewHolder(v);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.item_list_card, parent, false);
+            holder = new AppealViewHolder(convertView);
+            convertView.setTag(holder);
         } else {
-            holder = (AppealViewHolder) v.getTag();
+            holder = (AppealViewHolder) convertView.getTag();
         }
 
         AppealEntity appealEntity = mModel.get(position);
 
-        holder.categoryTitle.setText(appealEntity.getCategory());
-        holder.taskDesc.setText(appealEntity.getFullText());
-        holder.likesAmount.setText(String.valueOf(appealEntity.getLikeAmount()));
-        holder.categoryIcon.setImageDrawable(mContext.getResources().getDrawable(appealEntity.getIconId()));
-        holder.dateCreated.setText(InitData.getFormatter().format(appealEntity.getCreated()));
+        holder.mTvCategoryTitle.setText(appealEntity.getCategory());
+        holder.mTvTaskDesc.setText(appealEntity.getFullText());
+        holder.mTvLikesAmount.setText(String.valueOf(appealEntity.getLikeAmount()));
+        holder.mIvCategoryIcon.setImageDrawable(ContextCompat.getDrawable(mContext, appealEntity.getIconId()));
+        holder.mTvDateCreated.setText(InitData.getFormatter().format(appealEntity.getCreated()));
         String days = mContext.getResources().getString(R.string.days);
-        holder.daysAmount.setText(String.valueOf(appealEntity.getDaysAmount()).concat(" ").concat(days));
+        holder.mTvDaysAmount.setText(String.valueOf(appealEntity.getDaysAmount()).concat(" ").concat(days));
 
-        v.setTag(holder);
-
-        return v;
+        return convertView;
     }
 
     private class AppealViewHolder {
 
-        TextView categoryTitle;
-        TextView taskDesc;
-        TextView daysAmount;
-        TextView dateCreated;
-        TextView likesAmount;
-        ImageView categoryIcon;
+        private TextView mTvCategoryTitle;
+        private TextView mTvTaskDesc;
+        private TextView mTvDaysAmount;
+        private TextView mTvDateCreated;
+        private TextView mTvLikesAmount;
+        private ImageView mIvCategoryIcon;
 
         public AppealViewHolder(View itemView) {
 
-            categoryTitle = (TextView) itemView.findViewById(R.id.category_title);
-            categoryIcon = (ImageView) itemView.findViewById(R.id.category_icon);
-            taskDesc = (TextView) itemView.findViewById(R.id.task_desc);
-            daysAmount = (TextView) itemView.findViewById(R.id.amount_days);
-            dateCreated = (TextView) itemView.findViewById(R.id.date_created);
-            likesAmount = (TextView) itemView.findViewById(R.id.likes_amount);
+            mTvCategoryTitle = (TextView) itemView.findViewById(R.id.category_title);
+            mIvCategoryIcon = (ImageView) itemView.findViewById(R.id.category_icon);
+            mTvTaskDesc = (TextView) itemView.findViewById(R.id.task_desc);
+            mTvDaysAmount = (TextView) itemView.findViewById(R.id.amount_days);
+            mTvDateCreated = (TextView) itemView.findViewById(R.id.date_created);
+            mTvLikesAmount = (TextView) itemView.findViewById(R.id.likes_amount);
 
         }
     }

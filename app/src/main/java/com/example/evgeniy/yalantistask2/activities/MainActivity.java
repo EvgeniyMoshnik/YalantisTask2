@@ -1,6 +1,7 @@
 package com.example.evgeniy.yalantistask2.activities;
 
 
+
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;

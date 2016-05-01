@@ -43,13 +43,13 @@ public class InitData {
                     category = ctx.getString(R.string.category1);
                     responsible = ctx.getString(R.string.respon_1);
                     fullText = ctx.getString(R.string.full_text1);
-                    iconId = R.drawable.icon1;
+                    iconId = R.drawable.ic_engin;
                     break;
                 case 1:
                     category = ctx.getString(R.string.category2);
                     responsible = ctx.getString(R.string.respon_2);
                     fullText = ctx.getString(R.string.full_text2);
-                    iconId = R.drawable.icon2;
+                    iconId = R.drawable.ic_build;
                     break;
             }
 
