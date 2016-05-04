@@ -16,8 +16,6 @@ import com.example.evgeniy.yalantistask2.data.InitData;
 import com.example.evgeniy.yalantistask2.data.State;
 import com.example.evgeniy.yalantistask2.utils.InvokerDetail;
 
-import com.melnykov.fab.FloatingActionButton;
-
 import java.util.List;
 
 
@@ -61,14 +59,9 @@ public class AppealRecyclerFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         RecyclerView recyclerView = (RecyclerView) inflater.inflate(R.layout.recycler_view, container, false);
-
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
         recyclerView.setAdapter(mAdapter);
-
-        FloatingActionButton fab = (FloatingActionButton) getActivity().findViewById(R.id.fab);
-        fab.attachToRecyclerView(recyclerView);
 
         return recyclerView;
     }

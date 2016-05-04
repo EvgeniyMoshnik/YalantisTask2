@@ -2,7 +2,9 @@ package com.example.evgeniy.yalantistask2.activities;
 
 
 
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
@@ -13,6 +15,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.example.evgeniy.yalantistask2.R;
 import com.example.evgeniy.yalantistask2.adapters.PagerAdapter;
@@ -26,6 +29,7 @@ import com.example.evgeniy.yalantistask2.fragments.AppealRecyclerFragment;
 public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
+    private FloatingActionButton mFab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +74,15 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
         }
+        //Set FAB
+        mFab = (FloatingActionButton) findViewById(R.id.fab);
+        mFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "Snackbar!",
+                        Snackbar.LENGTH_LONG).show();
+            }
+        });
     }
 
     // Add Fragments to Tabs
@@ -96,5 +109,9 @@ public class MainActivity extends AppCompatActivity {
             mDrawerLayout.openDrawer(GravityCompat.START);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public FloatingActionButton getFloatingActionButton() {
+        return mFab;
     }
 }

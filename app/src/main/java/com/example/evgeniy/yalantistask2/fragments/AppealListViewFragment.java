@@ -1,22 +1,24 @@
 package com.example.evgeniy.yalantistask2.fragments;
 
 
+import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.ListViewCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.ListAdapter;
 
 import com.example.evgeniy.yalantistask2.R;
+import com.example.evgeniy.yalantistask2.activities.MainActivity;
 import com.example.evgeniy.yalantistask2.adapters.AppealListAdapter;
 import com.example.evgeniy.yalantistask2.data.AppealEntity;
 import com.example.evgeniy.yalantistask2.data.InitData;
 import com.example.evgeniy.yalantistask2.data.State;
 import com.example.evgeniy.yalantistask2.utils.InvokerDetail;
-
-import com.melnykov.fab.FloatingActionButton;
 
 import java.util.List;
 
@@ -30,6 +32,7 @@ public class AppealListViewFragment extends Fragment {
 
     private ListAdapter mAdapter;
     private InvokerDetail mInvoker;
+    private FloatingActionButton mFab;
 
     public static Fragment getInstance(State state) {
 
@@ -41,6 +44,12 @@ public class AppealListViewFragment extends Fragment {
         fragment.setArguments(params);
 
         return fragment;
+    }
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+            mFab = ((MainActivity) context).getFloatingActionButton();
     }
 
     @Override
@@ -70,10 +79,24 @@ public class AppealListViewFragment extends Fragment {
 
         listView.setOnItemClickListener(mInvoker);
 
-        FloatingActionButton fab = (FloatingActionButton) getActivity().findViewById(R.id.fab);
-        fab.attachToListView(listView);
+        listView.setOnScrollListener(new AbsListView.OnScrollListener() {
+            int lastFirstVisibleItem = 0;
 
+            @Override
+            public void onScrollStateChanged(AbsListView view, int scrollState) {
+            }
+
+            @Override
+            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                int visibility = mFab.getVisibility();
+                if (firstVisibleItem > lastFirstVisibleItem && visibility == View.VISIBLE) {
+                    mFab.hide();
+                } else if (firstVisibleItem < lastFirstVisibleItem && visibility == View.GONE) {
+                    mFab.show();
+                }
+                lastFirstVisibleItem = firstVisibleItem;
+            }
+        });
         return v;
     }
-
 }
